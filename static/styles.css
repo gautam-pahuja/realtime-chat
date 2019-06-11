@@ -1,0 +1,116 @@
+.userName-wrapper {
+    text-align: center;
+}
+
+.user-input {
+    height: 30px;
+    padding: 10px;
+    border: solid 1px #dcdcdc;
+    transition: box-shadow 0.3s, border 0.3s;
+    outline: none;
+}
+
+.user-input:focus {
+    border: solid 1px #707070;
+    box-shadow: 0 0 5px 1px #969696;
+}
+
+.enter-button {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: rgb(28, 184, 65);
+    width: 70px;
+    height: 30px;
+    outline: none;
+    border: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 17px Helvetica, Arial;
+}
+
+.chat-input-form {
+    background: #000;
+    padding: 3px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#status{
+    position: absolute;
+    bottom: 10%;
+    text-align: center;
+    color: red;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+.chat-input-form input, .edit-message-form input {
+    border: 0;
+    padding: 10px;
+    outline: none;
+    width: 89%;
+    margin-right: .5%;
+}
+
+.chat-input-form button, .edit-message-form button{
+    width: 10%;
+    background: rgb(130, 224, 255);
+    border: none;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.edit-message-form{
+    border: 2px solid;
+}
+
+.delete-icon,.edit-icon{
+    background-image: url(close.png);
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    float: right;
+    background-size: 19px;
+    display: block;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.edit-icon{
+    background-image: url(edit_icon.png);
+}
+
+.name-span{
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.time{
+    float: right;
+    color: grey;
+    font-size: 13px;
+    margin-top: 2px;
+}
+
+#messages {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#messages li {
+    padding: 5px 10px;
+}
+
+#messages li:nth-child(odd) {
+    background: #eee;
+}
